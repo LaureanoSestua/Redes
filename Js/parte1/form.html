@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<header>
+    <h1>Form</h1>
+</header>
+<hr>
+<body>
+
+    <div>
+
+        <form id="miFormulario" action="respuesta.html" method="get" onsubmit="return confirmarEnvio()">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+        function confirmarEnvio() {
+            return confirm("¿Estás seguro de que deseas enviar el formulario?");
+        }
+    </script>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

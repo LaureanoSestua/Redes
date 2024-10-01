@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<header>
+    <h1>Variables</h1>
+</header>
+<hr>
+<body>
+
+    <div>
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de z: ' + z + '</h2><h2>Tipo de z: ' + typeof z + '</h2>';">
+            var z
+        </button>
+        
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de a: ' + a + '</h2><h2>Tipo de a: ' + typeof a + '</h2>';">
+            var a = 3
+        </button>
+    
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de b: ' + b + '</h2><h2>Tipo de b: ' + typeof b + '</h2>';">
+            var b = '1'
+        </button>
+    
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de c: ' + c + '</h2><h2>Tipo de c: ' + typeof c + '</h2>';">
+            var c = 5
+        </button>
+        
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de suma 1: ' + suma1 + '</h2><h2>Tipo de suma 1: ' + typeof suma1 + '</h2>';">
+            suma1 = a + b
+        </button>
+    
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de suma 2: ' + suma2 + '</h2><h2>Tipo de suma 2: ' + typeof suma2 + '</h2>';">
+            suma2 = a + c
+        </button>
+
+        <button onclick="document.getElementById('resultado').innerHTML = '<h2>Valor de habilitado: ' + habilitado + '</h2><h2>Tipo de habilitado: ' + typeof habilitado + '</h2>';">
+            habilitado = true
+        </button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        var z;
+        var a = 3;
+        var b = '1';
+        var c = 5;
+        var suma1 = a + b;
+        var suma2 = a + c;
+        var habilitado = true;
+    </script>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

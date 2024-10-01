@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<header>
+    <h1>Objetos</h1>
+</header>
+<hr>
+<body>
+
+    <div">
+        <button id="crear">Crear</button>
+        <button id="limpiar">Limpiar</button>
+        <button id="info">Info</button>
+    </div>
+
+    <div id="contenedor"></div>
+
+    <script>
+        let contador = 0;
+
+       const btnCrear = document.getElementById('crear');
+        const btnLimpiar = document.getElementById('limpiar');
+        const btnInfo = document.getElementById('info'); 
+        const contenedor = document.getElementById('contenedor');
+
+        btnCrear.addEventListener('click', () => {
+            const nuevoElemento = document.createElement('div');
+            nuevoElemento.classList.add('elemento');
+            nuevoElemento.innerHTML = `<h1>Elemento creado: ${contador}</h1>`;
+            contenedor.appendChild(nuevoElemento);
+            contador++;
+        });
+
+        btnLimpiar.addEventListener('click', () => {
+            contenedor.innerHTML = '';
+            contador = 0;
+        });
+
+        btnInfo.addEventListener('click', () => {
+            alert(`Cantidad de elementos creados: ${contenedor.childNodes.length}`);
+        });
+    </script>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

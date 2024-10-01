@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con un input</title>
+</head>
+<header>
+    <h1>Operaciones con un input</h1>
+</header>
+<hr>
+<body>
+
+    <input type="text" id="caja" placeholder="Introduce un valor">
+
+    <br><br>
+
+    <button id="muestraValor">Mostrar Valor</button>
+    <button id="suma">Sumar 1</button>
+    <button id="elevadoCuadrado">Elevar al Cuadrado</button>
+    <button id="multiplica">Multiplicar por 2</button>
+    <button id="elevadoEquis">2 elevado a x</button>
+
+    <script>
+
+        document.getElementById("muestraValor").addEventListener('click', function() {
+            alert(document.getElementById("caja").value);
+        });
+
+        document.getElementById("suma").addEventListener('click', function() {
+            let valor = parseInt(document.getElementById("caja").value);
+            document.getElementById("caja").value = valor + 1;
+        });
+
+        document.getElementById("elevadoCuadrado").addEventListener('click', function() {
+            let valor = parseInt(document.getElementById("caja").value);
+            document.getElementById("caja").value = Math.pow(valor, 2);
+        });
+
+        document.getElementById("multiplica").addEventListener('click', function() {
+            let valor = parseInt(document.getElementById("caja").value);
+            document.getElementById("caja").value = valor * 2;
+        });
+
+        document.getElementById("elevadoEquis").addEventListener('click', function() {
+            let valor = parseInt(document.getElementById("caja").value);
+            document.getElementById("caja").value = Math.pow(2, valor);
+        });
+    </script>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

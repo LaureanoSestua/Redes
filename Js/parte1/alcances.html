@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcances</title>
+    <script>
+        var variableGlobal;
+    </script>
+</head>
+<header>
+    <h1>Alcances</h1>
+</header>
+<hr>
+<body>
+
+<div>
+    <script type="text/javascript">
+        var variableGlobal;
+        alert("La variable global ha sido declarada, pero no asignada.");
+        alert("Valor de variableGlobal: " + variableGlobal);
+        alert("Tipo de variableGlobal: " + typeof variableGlobal);
+    </script>
+
+    <button onclick="var variableLocal = prompt('Ingrese un valor para la variable local:');
+        alert('Valor de variableLocal: ' + variableLocal);
+        alert('Tipo de variableLocal: ' + typeof variableLocal);">
+        Inicialización desde adentro de un procedimiento
+    </button>
+
+    <button onclick="variableGlobal = prompt('Ingrese un valor para la variable global:');
+        alert('Valor de variableGlobal: ' + variableGlobal);
+        alert('Tipo de variableGlobal: ' + typeof variableGlobal);">
+        Inicialización forzada desde adentro de un procedimiento
+    </button>
+
+    <button onclick="alert('Valor de variableGlobal: ' + variableGlobal);">
+        Mostrar variable global
+    </button>
+</div>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

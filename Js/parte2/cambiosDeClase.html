@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambios de clase</title>
+    <style>
+        .estilo1 {
+            background-color: black; 
+            color: white;
+            font-size: 18px;
+
+        }
+
+        .estilo2 {
+            background-color: white; 
+            color: black;
+            font-size: 42px;
+        }
+
+        .estilo3 {
+            background-color: yellow; 
+            color: blue;
+            font-size: 42px;
+        }
+
+        .estilo4 {
+            background-color: red; 
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<header>
+    <h1>Cambios de clase</h1>
+</header>
+<hr>
+<body>
+
+    <div id="contenedor" class="container estilo1">
+        <h2>Lista</h2>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+    <button onclick="cambiarEstilo('estilo1')">Tipo 1</button>
+    <button onclick="cambiarEstilo('estilo2')">Tipo 2</button>
+    <button onclick="cambiarEstilo('estilo3')">Tipo 3</button>
+    <button onclick="cambiarEstilo('estilo4')">Tipo 4</button>
+
+    <script>
+        function cambiarEstilo(estilo) {
+            const contenedor = document.getElementById('contenedor');
+            contenedor.className = 'container ' + estilo;
+        }
+    </script>
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>

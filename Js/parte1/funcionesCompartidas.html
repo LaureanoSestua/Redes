@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion Compartida</title>
+</head>
+<header>
+    <h1>Funcion Compartida</h1>
+</header>
+<hr>
+<body>
+    <div id="contenedor">
+
+        <div id="display">0</div>
+    
+        <div id="teclado">
+    
+            <div>
+                <button onclick="agregar(1)">1</button>
+                <button onclick="agregar(2)">2</button>
+                <button onclick="agregar(3)">3</button>
+            </div>
+            <div>
+                <button onclick="agregar(4)">4</button>
+                <button onclick="agregar(5)">5</button>
+                <button onclick="agregar(6)">6</button>
+            </div>
+            <div>
+                <button onclick="agregar(7)">7</button>
+                <button onclick="agregar(8)">8</button>
+                <button onclick="agregar(9)">9</button>
+            </div>
+            <div>
+                <button onclick="sumar()">+</button>
+            </div>
+            <div>
+                <button onclick="mostrarAcumulador()">Mostrar Acumulador</button>
+            </div>
+            <div>
+                <button onclick="borrarAcumulador()">Borrar Acumulador</button>
+            </div>
+            <div>
+                <button onclick="borrarDisplay()">Borrar Display</button>
+            </div>
+    
+        </div>
+    </div>
+    
+    <script>
+    
+        let acumulador = 0;
+        let displayValue = "";
+    
+        function agregar(num) {
+            displayValue += num;
+            document.getElementById('display').textContent = displayValue;
+        }
+    
+        function sumar() {
+            acumulador += parseFloat(displayValue) || 0;
+            displayValue = "";
+            document.getElementById('display').textContent = 0;
+        }
+    
+        function mostrarAcumulador() {
+            alert("Acumulador: " + acumulador);
+        }
+    
+        function borrarAcumulador() {
+            acumulador = 0;
+            alert("Acumulador borrado");
+        }
+    
+        function borrarDisplay() {
+            displayValue = "";
+            document.getElementById('display').textContent = 0;
+        }
+    
+    </script>
+    
+
+</body>
+<hr>
+<footer>
+    <h2>
+        <strong>
+            Datos del alumno
+        </strong>
+    </h2>
+    <p>
+    Laureano Sestua
+    </p>
+    <p>
+    laureano.sestua@comunidad.ub.edu.ar
+    </p>
+    <a href="../../Principal.html">Volver a inicio</a>
+    <a href="../index.html">Volver atras</a>
+</footer>
+</html>
